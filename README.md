@@ -1,4 +1,4 @@
-# This project is related to image classification using machine learning techniques and transformers
+# This project is related to brain MRI image classification using machine learning techniques and transformers
 
 We have taken a publicly available brain MRI dataset from Kaggle and used pretrained models like RESNET50 and VITB16 to do the classification. We have generated classification reports and performance metrics for both models on the dataset and compared them.
 
