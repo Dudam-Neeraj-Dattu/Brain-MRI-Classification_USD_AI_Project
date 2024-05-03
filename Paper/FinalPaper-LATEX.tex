@@ -109,19 +109,19 @@ To summarize the flow of information through BrainViT: the first step is to resc
 \end{figure}
 
 \section{Results}
-We trained the model for 50 epochs at which point we were observing a training accuracy of 98.64\% along with a testing accuracy of 95.20\%. Which, when compared against a typical CNN that trained for 357 epochs, only achieved an accuracy of 92.5\% which was produced by Ramez Samy on Kaggle$^{[7]}$. When one considers the fact that the CNN model has to train for 10x more epochs along with the lower performance - one can quickly see the value in using a ViT over other deep learning techniques. Furthermore, a larger VGG model produced on Kaggle by Kevin Tian which employed the well known VGG 19 with adjusted architecture for the task achieved accuracies in the 97\% range with 179 epochs$^{[8]}$. Both of these models produced by Samy and Tian employed the usage of the same dataset as we did. Finally, to cross validate the results we were seeing from other models, we used an adjusted architecture of ResNet50 (a CNN with residual connections) with 50 training epochs and saw an accuracy of about 80\%. The ResNet50 model also had a much more noisy approach on the loss and accuracy during training which can be seen in figure 4.
+We trained the model for 50 epochs at which point we were observing a training accuracy of 98.64\% along with a testing accuracy of 95.20\%. Which, when compared against a typical CNN that trained for 357 epochs, only achieved an accuracy of 92.5\% which was produced by Ramez Samy on Kaggle$^{[7]}$. When one considers the fact that the CNN model has to train for 7x more epochs along with the lower performance - one can quickly see the value in using a ViT over other deep learning techniques. Furthermore, a larger VGG model produced on Kaggle by Kevin Tian which employed the well known VGG 19 with adjusted architecture for the task achieved accuracies in the 97\% range with 179 epochs$^{[8]}$. Both of these models produced by Samy and Tian employed the usage of the same dataset as we did. Finally, to cross validate the results we were seeing from other models, we used an adjusted architecture of ResNet50 (a CNN with residual connections) with 50 training epochs and saw an accuracy of about 80\%. The ResNet50 model also had a much more noisy approach on the loss and accuracy during training which can be seen in figure 4.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.45\textwidth]{graph.png}
-    \caption{Plot of loss function and accuracy over initial 30 training epochs.}
+    \includegraphics[width=0.45\textwidth]{lossacc over 50 epochs.PNG}
+    \caption{Plot of loss function and accuracy over 50 training epochs.}
     \label{fig:2}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.45\textwidth]{resnet versus brainvit.PNG}
-    \caption{Plot of loss and accuracy of BrainViT versus ResNet50 over final 50 training epochs.}
+    \caption{Plot of loss and accuracy of BrainViT versus ResNet50 50 training epochs.}
     \label{fig:3}
 \end{figure}
 
